@@ -8,4 +8,27 @@
 
 - si besoin pour installer twig 
     composer require symfony/twig-bundle
+
+
+## ajout de bootsrap 
+
+- installer yarn et npm 
+    brew ou apt install npm 
+
+    brew ou apt install yarn
+
+
+- faire ensuite : 
+    yarn add bootstrap --dev
+
+
+
+# Liens utiles 
+
+https://symfony.com/doc/current/frontend/encore/bootstrap.html
+
+https://medium.com/@Gaotian/créer-une-image-docker-avec-symfony-4-902001abd65f
+
+
+
     
