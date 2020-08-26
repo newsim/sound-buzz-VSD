@@ -10,7 +10,7 @@
     composer require symfony/twig-bundle
 
 
-## ajout de bootsrap 
+## ajout de bootsrap (optionnel)
 
 - installer yarn et npm 
     brew ou apt install npm 
