@@ -1,5 +1,11 @@
 #projet fin de 1er année
 
+## Lancement du projet 
+
+* docker-compose up -d
+* docker build
+
+
 ## Ajout d'une page 
 
 - creer un controller dans le dossier src/Controller
