@@ -1,7 +1,8 @@
 /logs
 /vendor
 /public/bundles/
-/var/
+/var/cache/dev
+
 
 ###> symfony/webpack-encore-bundle ###
 /node_modules/
