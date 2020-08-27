@@ -9,6 +9,10 @@ return [
     false, // $matchHost
     [ // $staticRoutes
         '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\BaseController::getHome'], null, ['GET' => 0, 'HEAD' => 1], null, false, false, null]],
+        '/bibliotheque' => [[['_route' => 'bibliotheque', '_controller' => 'App\\Controller\\BibliothequeController::getBibliotheque'], null, ['GET' => 0, 'HEAD' => 1], null, false, false, null]],
+        '/connexion' => [[['_route' => 'connexion', '_controller' => 'App\\Controller\\ConnexionController::getConnexion'], null, ['GET' => 0, 'HEAD' => 1], null, false, false, null]],
+        '/inscription' => [[['_route' => 'register', '_controller' => 'App\\Controller\\RegisterController::getRegister'], null, ['GET' => 0, 'HEAD' => 1], null, false, false, null]],
+        '/upload' => [[['_route' => 'upload', '_controller' => 'App\\Controller\\UploadController::getUpload'], null, ['GET' => 0, 'HEAD' => 1], null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
