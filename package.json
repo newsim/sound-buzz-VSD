@@ -4,6 +4,7 @@
         "bootstrap": "^4.5.2",
         "core-js": "^3.0.0",
         "regenerator-runtime": "^0.13.2",
+        "webpack-manifest-plugin": "^2.2.0",
         "webpack-notifier": "^1.6.0"
     },
     "license": "UNLICENSED",
@@ -13,5 +14,8 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress"
+    },
+    "dependencies": {
+        "copy-webpack-plugin": "^6.0.3"
     }
 }

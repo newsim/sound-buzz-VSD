@@ -6,5 +6,8 @@ return [
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\BaseController::getHome'], [], [['text', '/']], [], []],
     'about' => [['subject'], ['_controller' => 'App\\Controller\\BaseController::getAPropos'], [], [['variable', '/', '[^/]++', 'subject', true], ['text', '/apropos']], [], []],
-    'accueil' => [[], ['_controller' => 'App\\Controller\\HomeController::getaccueil'], [], [['text', '/']], [], []],
+    'bibliotheque' => [[], ['_controller' => 'App\\Controller\\BibliothequeController::getBibliotheque'], [], [['text', '/bibliotheque']], [], []],
+    'connexion' => [[], ['_controller' => 'App\\Controller\\ConnexionController::getConnexion'], [], [['text', '/connexion']], [], []],
+    'register' => [[], ['_controller' => 'App\\Controller\\RegisterController::getRegister'], [], [['text', '/inscription']], [], []],
+    'upload' => [[], ['_controller' => 'App\\Controller\\UploadController::getUpload'], [], [['text', '/upload']], [], []],
 ];

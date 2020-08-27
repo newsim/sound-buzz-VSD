@@ -1,4 +1,6 @@
 var Encore = require('@symfony/webpack-encore');
+var CopyWebpackPlugin = require('copy-webpack-plugin'); // this line tell to webpack to use the plugin
+
 
 // Manually configure the runtime environment if not already configured yet by the "encore" command.
 // It's useful when you use tools that rely on webpack.config.js file.
@@ -53,6 +55,8 @@ Encore
         config.corejs = 3;
     })
 
+
+
     // enables Sass/SCSS support
     //.enableSassLoader()
 
@@ -69,6 +73,18 @@ Encore
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()
     //.addEntry('admin', './assets/js/admin.js')
+    .addPlugin(new CopyWebpackPlugin([
+        { from: './assets/images', to: 'images' }
+    ]))
+
+    var ManifestPlugin = require('webpack-manifest-plugin');
+
+    module.exports = {
+        // ...
+        plugins: [
+        new ManifestPlugin()
+        ]
+    };
 ;
 
 module.exports = Encore.getWebpackConfig();
