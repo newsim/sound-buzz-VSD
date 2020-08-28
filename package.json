@@ -2,6 +2,7 @@
     "devDependencies": {
         "@symfony/webpack-encore": "^0.30.0",
         "bootstrap": "^4.5.2",
+        "copy-webpack-plugin": "^6.0.3",
         "core-js": "^3.0.0",
         "regenerator-runtime": "^0.13.2",
         "webpack-manifest-plugin": "^2.2.0",
@@ -15,7 +16,5 @@
         "watch": "encore dev --watch",
         "build": "encore production --progress"
     },
-    "dependencies": {
-        "copy-webpack-plugin": "^6.0.3"
-    }
+    "dependencies": {}
 }

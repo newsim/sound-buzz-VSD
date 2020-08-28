@@ -15,7 +15,7 @@ class BaseController extends AbstractController
     //ajout d'une page classique
     public function getHome()
     {
-        return $this->render('index.html.twig');
+        return $this->render('base.html.twig');
     }
 
     /**
